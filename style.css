@@ -96,6 +96,7 @@ body{
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    gap: 5px;
 }
 
 .btn-box a:hover {
@@ -176,18 +177,15 @@ body{
     width:100%;
 }
 
-/* Project section css*/
-
-/* #projects{
-    height: 100vh;
-    padding: 0px 10%;
-}
-.container{
-    max-width: 37.5rem;
-} */
-
 #projects {
     padding: 10rem 0;
+}
+
+.heading-section {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
 }
 
 #projects .item {
@@ -217,8 +215,90 @@ body{
     z-index: 2;
 }
 
-.left img {
-    width: 400px;
+#projects .item:nth-child(even) .right {
+    margin-left: 0;
+}
+
+#projects .item:nth-child(even) .left {
+    margin-left: -150px;
+}
+
+#projects .item .left .img {
     height: 500px;
-    object-fit: fill;
+    width:500px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #00abf0;
+}
+
+#projects .item .left .img::after {
+    position: absolute;
+    content:'';
+    left:0;
+    right:0;
+    height: 100%;
+    width:100%;
+    /* background-color: #ededed; */
+}
+#projects .item .left .img img {
+    object-fit: cover;
+}
+
+#projects .item:hover .left .img img {
+    transform: scale(1,1);
+    z-index: 1;
+}
+
+#projects .item .right .project-title {
+    font-size: 2.5rem;
+    font-family: 'Roboto Serif', serif;
+    margin-bottom: 1rem;
+}
+
+#projects .item .right .project-subtitle {
+    font-size:1.6rem;
+    margin-bottom: 2rem;
+}
+
+#projects .item .right .project-describtion {
+    color:#8ed8f5;
+    margin-bottom: 3rem;
+}
+
+#projects .item .right .btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+/* I still havent got the media query to work properly : affects devices 768px below */
+
+@media only screen and (max-width: 768px) {
+    #projects .item {
+        flex-direction: column;
+    }
+    #projects .item .left {
+        width:100%;
+    }
+    #projects .item .right {
+        width:90%;
+        margin-left: 0;
+        margin-top: -150px;
+    }
+    #projects .item:nth-child(even) {
+        flex-direction: column;
+    }
+    #projects .item:nth-child(even) .left {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #projects .item .right .buttons {
+        flex-direction: column;
+    }
+    #projects .item .right .buttons a {
+        width: 100%;
+        text-align: center;
+    }
 }
