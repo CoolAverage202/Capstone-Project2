@@ -175,3 +175,50 @@ body{
 .home-sci a:hover::before {
     width:100%;
 }
+
+/* Project section css*/
+
+/* #projects{
+    height: 100vh;
+    padding: 0px 10%;
+}
+.container{
+    max-width: 37.5rem;
+} */
+
+#projects {
+    padding: 10rem 0;
+}
+
+#projects .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+}
+
+#projects .item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#projects .item .left {
+    flex:1;
+}
+
+#projects .item .right {
+    flex:1;
+    margin-left: -150px;
+    background-color: #081b29;
+    padding: 5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #FFFFFF;
+    z-index: 2;
+}
+
+.left img {
+    width: 400px;
+    height: 500px;
+    object-fit: fill;
+}
