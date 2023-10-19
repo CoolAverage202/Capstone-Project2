@@ -18,7 +18,7 @@
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
             <a href="https://coolaverage202.github.io/Capstone-Project-1/">Resume</a>
-            <a href="#">Contact</a>
+            <a href="#contact-me">Contact</a>
         </nav>
     </header>
 
@@ -102,12 +102,12 @@
         </div>
     </section>
 
-    <section class="about-section" id="about">
-        <h2>About Me</h2>
-        <p>My Name is Cristopher I am a Web Developer that loves eating tacos al pastor</p>
-        <p>Coding hasn't been a linear path for me but a difficult road to follow.</p>
-        </section>
-
+    <section id="about" class="about-section">
+        <div class="container-about">
+            <h2>About Me</h2>
+            <p>My Name is Cristopher I am a Web Developer that loves eating tacos al pastor</p>
+            <p>Coding hasn't been a linear path for me but a difficult road to follow.</p>
+        </div>
         <h2 class="Facts">Facts About Me</h2>
         <div class="row">
         <div class="column">
@@ -158,10 +158,32 @@
     </section>
 
     <section id="contact-me">
-        <div class="container-footer">
-            <div class="contact-right"></div>
-            <div class="contact-left"></div>
+    <div class="container-footer">
+        <div class="contact-right"></div>
+        <div class="contact-left">
+            <div class="form-contact">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    </select>
+                
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 </body>
 </html> 
+
+
