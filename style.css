@@ -375,6 +375,12 @@ html {
 h2.Facts {
     text-align: center;
 }
+
+#about .container-about h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
 /* contact me section */
 
 section#contact-me {
