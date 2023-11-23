@@ -464,6 +464,128 @@ input[type=submit]:hover {
     padding: 20px; /* Add padding to separate content from the edges */
 }
 
+/* *************************************************************** */
+/* changes added to test for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 0.9rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-content h1 {
+        font-size: 40px; /* Smaller font size */
+    }
+
+    .home-content h3 {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    .home-content p {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .btn-box a, .home-sci a {
+        width: 35px; /* Adjust the width */
+        height: 35px; /* Adjust the height */
+        font-size: 16px; /* Adjust the font size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #projects .item .right {
+        padding: 3rem 1.5rem; /* Adjust padding */
+    }
+
+    #projects .item .left .img {
+        height: auto; /* Adjust for responsive images */
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about-section {
+        padding: 30px; /* Reduce padding */
+    }
+
+    .about-section h2, .about-section p {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .card {
+        padding: 15px; /* Adjust card padding */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container, .form-contact {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .contact-info p {
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff; /* Adjust as per your color scheme */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        text-align: left;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #projects .item .left, #projects .item .right {
+        width: 100%; /* Adjust width */
+        margin-left: 0; /* Reset margin */
+        padding: 20px; /* Adjust padding */
+    }
+
+    #projects .item .left .img {
+        max-width: 100%; /* Ensure image container fits screen */
+        height: auto; /* Adjust height */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #projects .item .right .project-title,
+    #projects .item .right .project-subtitle {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    #projects .item .right .project-description {
+        font-size: 14px; /* Reduce font size */
+    }
+}
+
+.card img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
 
 
 
