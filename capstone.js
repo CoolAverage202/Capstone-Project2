@@ -1,8 +1,16 @@
+// function toggleMenu() {
+//     var navbarMobile = document.getElementById("navbar-mobile");
+//     if (navbarMobile.style.display === "block") {
+//         navbarMobile.style.display = "none";
+//     } else {
+//         navbarMobile.style.display = "block";
+//     }
+// }
+
 function toggleMenu() {
-    var navbar = document.getElementById("navbar");
-    if (navbar.style.display === "block") {
-        navbar.style.display = "none";
-    } else {
-        navbar.style.display = "block";
-    }
+    var navbarMobile = document.getElementById("navbar-mobile");
+    var hamburgerButton = document.querySelector(".hamburger");
+
+    navbarMobile.classList.toggle('active');
+    hamburgerButton.classList.toggle('active');
 }
