@@ -17,11 +17,11 @@ body{
 /* Nav section */
 
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width:100%;
-    padding: 20px 10%;
+    padding: 5px 10%;
     background: transparent;
     display: flex;
     justify-content: space-between;
